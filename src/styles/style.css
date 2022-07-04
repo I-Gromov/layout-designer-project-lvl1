@@ -1,43 +1,45 @@
 /** CSS STYLE **/
 
 :root {
---white: #fff;
---transparent-whie: #d7ccc0;
---light: #f5f4f0;
---main: #fe8a02;
---dark-main: #42413c;
---dark: #2a2626;
---transparent-dark: #908d8b;
---brown: #b09a81;
---blue: #1085c5;
+  --white: #fff;
+  --transparent-whie: #d7ccc0;
+  --light: #f5f4f0;
+  --main: #fe8a02;
+  --dark-main: #42413c;
+  --dark: #2a2626;
+  --transparent-dark: #908d8b;
+  --brown: #b09a81;
+  --blue: #1085c5;
 }
 
 @font-face {
-  font-family: 'Neucha';
-  src: url('../fonts/Neucha/Neucha-Regular.ttf');
+  font-family: "Neucha";
+  src: url("../fonts/Neucha/Neucha-Regular.ttf");
 }
 
 @font-face {
-  font-family: 'Open Sans';
-  src: url('../fonts/Open_Sans/static/OpenSans/OpenSans-Regular.ttf');
+  font-family: "Open Sans";
+  src: url("../fonts/Open_Sans/static/OpenSans/OpenSans-Regular.ttf");
   font-weight: 400;
 }
 
 @font-face {
-  font-family: 'Open Sans';
-  src: url('../fonts/Open_Sans/static/OpenSans/OpenSans-Bold.ttf');
+  font-family: "Open Sans";
+  src: url("../fonts/Open_Sans/static/OpenSans/OpenSans-Bold.ttf");
   font-weight: 700;
 }
 
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 16px;
   line-height: 1.6em;
   color: var(--dark);
 }
 
-h1, h2, h3 {
-  font-family: 'Neucha', sans-serif;
+h1,
+h2,
+h3 {
+  font-family: "Neucha", sans-serif;
   line-height: 1.2em;
 }
 
