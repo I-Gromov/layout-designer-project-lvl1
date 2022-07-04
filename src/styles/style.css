@@ -1,63 +1,141 @@
 /** CSS STYLE **/
 
 :root {
-  --white: #fff;
-  --transparent-whie: #d7ccc0;
-  --light: #f5f4f0;
-  --main: #fe8a02;
-  --dark-main: #42413c;
-  --dark: #2a2626;
-  --transparent-dark: #908d8b;
-  --brown: #b09a81;
-  --blue: #1085c5;
+    --white: #fff;
+    --transparent-whie: #d7ccc0;
+    --light: #f5f4f0;
+    --main: #fe8a02;
+    --dark-main: #42413c;
+    --dark: #2a2626;
+    --transparent-dark: #908d8b;
+    --brown: #b09a81;
+    --blue: #1085c5;
 }
 
 @font-face {
-  font-family: "Neucha";
-  src: url("../fonts/Neucha/Neucha-Regular.ttf");
+    font-family: 'Neucha';
+
+    src: url('../fonts/Neucha/Neucha-Regular.ttf');
 }
 
 @font-face {
-  font-family: "Open Sans";
-  src: url("../fonts/Open_Sans/static/OpenSans/OpenSans-Regular.ttf");
-  font-weight: 400;
+    font-family: 'Open Sans';
+    font-weight: 400;
+
+    src: url('../fonts/Open_Sans/static/OpenSans/OpenSans-Regular.ttf');
 }
 
 @font-face {
-  font-family: "Open Sans";
-  src: url("../fonts/Open_Sans/static/OpenSans/OpenSans-Bold.ttf");
-  font-weight: 700;
+    font-family: 'Open Sans';
+    font-weight: 700;
+
+    src: url('../fonts/Open_Sans/static/OpenSans/OpenSans-Bold.ttf');
 }
 
 body {
-  font-family: "Open Sans", sans-serif;
-  font-size: 16px;
-  line-height: 1.6em;
-  color: var(--dark);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 1.6em;
+    color: var(--dark);
+}
+
+p {
+    margin: 0;
+    padding: 0;
 }
 
 h1,
 h2,
 h3 {
-  font-family: "Neucha", sans-serif;
-  line-height: 1.2em;
+    margin: 0;
+    padding: 0;
+
+    font-family: 'Neucha', sans-serif;
+    line-height: 1.2em;
 }
 
 h1 {
-  font-style: 72px;
+    font-size: 72px;
 }
 
 h2 {
-  font-style: 60px;
+    font-size: 60px;
 }
 
 h3 {
-  font-style: 34px;
+    font-size: 34px;
 }
 
-section {
-  max-width: 1110px;
-  text-align: center;
-  padding-top: 100px;
-  padding-bottom: 100px;
+a {
+    text-decoration: none;
+}
+
+.btn {
+    display: block;
+
+    box-sizing: border-box;
+    width: 148px;
+    height: 49px;
+    padding: 12px 24px;
+}
+
+.btn-orange {
+    font-weight: bold;
+    color: var(--white);
+
+    text-transform: uppercase;
+
+    background-color: var(--main);
+}
+
+.wrapper {
+    max-width: 1110px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+    text-align: center;
+}
+
+header::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    content: '';
+
+    background-image: url('../../images/background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: .1;
+}
+
+header {
+    background-color: var(--light);
+    background-image: url('../../images/main.png');
+    background-repeat: no-repeat;
+    background-position: 661px 55px;
+    background-size: 1082px 525px;
+}
+
+.header_title {
+    margin-bottom: 185px;
+
+    font-weight: 400;
+
+    text-align: left;
+}
+
+.header_text-wrapper {
+    text-align: left;
+
+    column-count: 2;
+    column-gap: 30px;
 }
