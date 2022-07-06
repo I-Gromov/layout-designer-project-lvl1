@@ -37,6 +37,8 @@ body {
     font-size: 16px;
     line-height: 1.6em;
     color: var(--dark);
+    padding: 0;
+    margin: 0;
 }
 
 p {
@@ -101,13 +103,12 @@ a {
 header::before {
     position: absolute;
     top: 0;
-    left: 0;
-    z-index: -1;
+    left: 560px;
 
     display: block;
 
-    width: 100%;
-    height: 100%;
+    width: 1440px;
+    height: 95%;
 
     content: '';
 
@@ -117,20 +118,33 @@ header::before {
     opacity: .1;
 }
 
+.header-wrapper {
+position: relative;
+}
+
 header {
     background-color: var(--light);
-    background-image: url('../../images/main.png');
-    background-repeat: no-repeat;
-    background-position: 661px 55px;
-    background-size: 1082px 525px;
+}
+
+.header_image {
+    position: absolute;
+    top:55px;
+    right: 455px;
+    z-index: 1;
 }
 
 .header_title {
-    margin-bottom: 185px;
+    margin-bottom: 200px;
+    position: relative;
 
     font-weight: 400;
 
     text-align: left;
+    z-index: 2;
+}
+
+.header_title-orange {
+    color: var(--main);
 }
 
 .header_text-wrapper {
@@ -138,4 +152,17 @@ header {
 
     column-count: 2;
     column-gap: 30px;
+}
+
+.header_first-paragraph {
+    margin-bottom: 60px;
+}
+
+.header_second-paragraph {
+    break-inside: avoid;
+    margin-bottom: 14px;
+}
+
+.header_third-paragraph {
+    margin-bottom: 38px;
 }
