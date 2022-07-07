@@ -54,6 +54,7 @@ h3 {
 
     font-family: 'Neucha', sans-serif;
     line-height: 1.2em;
+    font-weight: 400;
 }
 
 h1 {
@@ -70,6 +71,12 @@ h3 {
 
 a {
     text-decoration: none;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
 
 .btn {
@@ -100,10 +107,12 @@ a {
     text-align: center;
 }
 
+
+
 header::before {
-    position: absolute;
+   position: absolute;
     top: 0;
-    left: 560px;
+    left: 12%;
 
     display: block;
 
@@ -118,9 +127,11 @@ header::before {
     opacity: .1;
 }
 
+
 .header-wrapper {
 position: relative;
 }
+
 
 header {
     background-color: var(--light);
@@ -128,22 +139,20 @@ header {
 
 .header_image {
     position: absolute;
-    top:55px;
-    right: 455px;
-    z-index: 1;
+    top: -45px;
+    left: 297px;
+    z-index: -1;
 }
 
 .header_title {
     margin-bottom: 200px;
     position: relative;
 
-    font-weight: 400;
-
     text-align: left;
-    z-index: 2;
+    z-index: 100;
 }
 
-.header_title-orange {
+.title-orange {
     color: var(--main);
 }
 
@@ -165,4 +174,78 @@ header {
 
 .header_third-paragraph {
     margin-bottom: 38px;
+}
+
+.section-one {
+    text-align: center;
+    height: 814px;
+    box-sizing: border-box;
+}
+
+.section-one_title {
+    margin-bottom: 30px;
+}
+
+.section-one_paragraph {
+    margin-bottom: 30px;
+}
+
+.video {
+    position: relative;
+    filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 0.15));
+}
+
+.navigation {
+    padding-top: 100px;
+    height: 991px;
+    background-color: var(--dark);
+}
+
+
+.navigation_title {
+    font-size: 52px;
+    line-height: 1.2;
+    color: var(--light);
+    text-align: left;
+    width: 350px;
+}
+
+.navigation_list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: -20px;
+}
+
+.list_item {
+    box-sizing: border-box;
+    width: 350px;
+    text-align: left;
+    background-color: var(--light);
+    margin-bottom: 20px;
+}
+
+.list_item:first-child {
+    background-color: var(--dark);
+}
+
+.list_item > a {
+    padding: 24px;
+    display: block;
+    cursor: pointer;
+}
+
+.list_number {
+    display: block;
+    margin-bottom: 40px;
+    font-size: 64px;
+    font-family: Neucha, serif;
+    line-height: 1;
+}
+
+.list_title {
+    color: var(--main);
+    font-size: 34px;
+    line-height: 1.2;
+    margin-bottom: 12px;
 }
