@@ -265,3 +265,65 @@ header {
     line-height: 1.2;
     margin-bottom: 12px;
 }
+
+.effect-light {
+    background-color: var(--light);
+}
+
+.effect-light_head-wrapper {
+    display: flex;
+    margin-bottom: 100px;
+}
+
+.effect-light_text-block {
+    text-align: left;
+    padding-left: 30px;
+    font-family: neucha, sans-serif;
+}
+
+.effect-light_mark {
+    font-size: 24px;
+    line-height: 1.2;
+    color: var(--transparent-dark);
+}
+
+.effect-light_header {
+    margin-bottom: 30px;
+    font-size: 60px;
+}
+
+.effect-light_text {
+    font-size: 34px;
+    line-height: 1.2;
+}
+
+.effect-light_image {
+    width: 578px;
+    height: 434px;
+    filter: drop-shadow(0px 16px 32px rgba(0, 0, 0, 0.15));
+}
+
+.effect-light_text-wrapper {
+display: flex;
+justify-content: space-between;
+}
+
+.effect-light_headline {
+    font-family: Open Sans, sans-serif;
+    font-size: 14px;
+    line-height: 1.2;
+    background-color: var(--brown);
+    text-transform: uppercase;
+    color: var(--white);
+    font-weight: 700;
+    column-span: all;
+    text-align: left;
+    padding: 5px 0px 5px 10px;
+    margin-bottom: 20px;
+    flex-grow: 1000;
+}
+
+.effect-light_text-wrapper p {
+    width: 540px;
+    text-align: left;
+}
