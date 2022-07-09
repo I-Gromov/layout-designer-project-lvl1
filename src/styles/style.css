@@ -97,6 +97,11 @@ ul {
     background-color: var(--main);
 }
 
+.btn-orange:hover {
+    cursor: pointer;
+    background-color: #EA7600;
+}
+
 .wrapper {
     max-width: 1110px;
     margin-right: auto;
@@ -225,6 +230,16 @@ header {
     margin-bottom: 20px;
 }
 
+.list_item:hover {
+    background-color: var(--main);
+}
+
+.list_item:hover a .list_number,
+.list_item:hover a .list_title,
+.list_item:hover a .list_text {
+    color: var(--white);
+}
+
 .list_item:first-child {
     background-color: var(--dark);
 }
@@ -242,6 +257,7 @@ header {
     font-family: Neucha, serif;
     line-height: 1;
 }
+
 
 .list_title {
     color: var(--main);
