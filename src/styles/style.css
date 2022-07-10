@@ -186,7 +186,7 @@ header {
 
 .navigation {
     padding-top: 100px;
-    background-color: var(--dark);
+    background-color: var(--dark-main);
 }
 
 
@@ -217,24 +217,19 @@ header {
     background-color: var(--main);
 }
 
-.list_item a:visited .list_title {
-    color: var(--main);
-}
-
-.list_item a:visited .list_number,
-.list_item a:visited .list_text
- {
+.list_text {
     color: var(--dark);
 }
 
 .list_item a:hover .list_number,
 .list_item a:hover .list_title,
-.list_item a:hover.list_text {
+.list_item a:hover .list_text {
     color: var(--white);
 }
 
+
 .list_item:first-child {
-    background-color: var(--dark);
+    background-color: var(--dark-main);
 }
 
 .list_item > a {
@@ -244,6 +239,7 @@ header {
 }
 
 .list_number {
+    color: var(--dark-main);
     display: block;
     margin-bottom: 40px;
     font-size: 64px;
@@ -376,4 +372,97 @@ justify-content: space-between;
 
 .effect_text-wrapper_dark p {
     color: var(--white);
+}
+
+.contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 104px;
+    justify-content: space-between;
+    color: #000;
+}
+
+.contacts a {
+    text-decoration: underline;
+    color: var(--blue);
+}
+
+.subscription {
+    padding: 40px 55px;
+    background-color: var(--dark-main);
+    color: var(--white);
+    margin-bottom: 76px;
+    display: flex;
+    text-align: left;
+    justify-content: space-between;
+    align-items: center
+}
+
+.subscription_button {
+    position: relative;
+    padding: 0;
+    right: 3px;
+    height: 50px;
+    width: 70px;
+    background-color: var(--main);
+    border: none;
+}
+
+.subscription_button::before {
+    position: absolute;
+    content: '';
+    height: 20px;
+    width: 20px;
+    bottom: 15px;
+    right: 25px;
+    display: block;
+    background-image: url('../../images/send.svg');
+    background-size: cover;
+}
+
+.form {
+    display: flex;
+    flex-direction: column ;
+}
+
+.form_email-wrapper {
+    display: flex;
+}
+
+.subscription_text {
+    font-family: Neucha, sans-serif;
+    font-size: 34px;
+    line-height: 1.2;
+}
+
+.subscription_label {
+    font-size: 18px;
+    margin-bottom: 9px;
+}
+
+.subscription_note {
+    font-size: 12px;
+}
+
+.subscription_note a {
+    text-decoration: underline;
+    color: var(--white);
+}
+
+.subscription_textfield {
+    height: 50px;
+    width: 423px;
+    padding: 15px;
+    box-sizing: border-box;
+    border: 1px solid #E3E3E3;
+}
+
+.subscription_textfield:focus {
+    outline: none;
+}
+
+.subscription_textfield::-webkit-input-placeholder {
+    color: #757575;
+    opacity: 0.2;
 }
