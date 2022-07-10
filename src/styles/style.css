@@ -217,9 +217,19 @@ header {
     background-color: var(--main);
 }
 
-.list_item:hover a .list_number,
-.list_item:hover a .list_title,
-.list_item:hover a .list_text {
+.list_item a:visited .list_title {
+    color: var(--main);
+}
+
+.list_item a:visited .list_number,
+.list_item a:visited .list_text
+ {
+    color: var(--dark);
+}
+
+.list_item a:hover .list_number,
+.list_item a:hover .list_title,
+.list_item a:hover.list_text {
     color: var(--white);
 }
 
