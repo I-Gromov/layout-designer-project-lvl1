@@ -268,66 +268,102 @@ header {
     z-index: -100;
 }
 
-.effect-light {
-    background-color: var(--light);
+.effect {
     position: relative;
     z-index: -200;
 }
 
-.effect-light_head-wrapper {
+.effect_light {
+    background-color: var(--light);
+}
+
+.effect_dark {
+    background-color: var(--brown);
+}
+
+.effect_head-wrapper {
     display: flex;
     margin-bottom: 100px;
 }
 
-.effect-light_text-block {
+.effect_text-block {
     text-align: left;
-    padding-left: 30px;
     font-family: neucha, sans-serif;
 }
 
-.effect-light_mark {
-    font-size: 24px;
-    line-height: 1.2;
-    color: var(--transparent-dark);
+.effect_text-block_light {
+    padding-left: 30px;
 }
 
-.effect-light_header {
+.effect_text-block_dark {
+    padding-right: 30px;
+}
+
+.effect_mark {
+    font-size: 24px;
+    line-height: 1.2;
+}
+
+.effect_mark_light {
+color: var(--transparent-dark);
+}
+
+.effect_mark_dark {
+    color: #D7CCC0;
+    }
+
+.effect_header {
     margin-bottom: 30px;
     font-size: 60px;
 }
 
-.effect-light_text {
+.effect_text {
     font-size: 34px;
     line-height: 1.2;
 }
 
-.effect-light_image {
+.effect_header_dark,
+.effect_text_dark {
+    color: var(--white);
+}
+
+.effect_image {
     width: 578px;
     height: 434px;
     filter: drop-shadow(0px 16px 32px rgba(0, 0, 0, 0.15));
 }
 
-.effect-light_text-wrapper {
+.effect_text-wrapper {
 display: flex;
 justify-content: space-between;
 }
 
-.effect-light_headline {
+.effect_headline {
     font-family: Open Sans, sans-serif;
     font-size: 14px;
     line-height: 1.2;
-    background-color: var(--brown);
     text-transform: uppercase;
-    color: var(--white);
     font-weight: 700;
-    column-span: all;
     text-align: left;
     padding: 5px 0px 5px 10px;
     margin-bottom: 20px;
-    flex-grow: 1000;
 }
 
-.effect-light_text-wrapper p {
+.effect_headline_light {
+    color: var(--white);
+    background-color: var(--brown);
+}
+
+.effect_headline_dark {
+    color: var(--brown);
+    background-color: var(--white);
+}
+
+.effect_text-wrapper p {
     width: 540px;
     text-align: left;
+}
+
+.effect_text-wrapper_dark p {
+    color: var(--white);
 }
