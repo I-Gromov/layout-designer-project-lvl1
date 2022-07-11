@@ -188,7 +188,7 @@ header {
 .video {
   position: relative;
 
-  filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 0.15));
+  filter: drop-shadow(0 16px 32px rgba(0 0 0 / 15%));
 }
 
 .navigation {
@@ -358,7 +358,7 @@ header {
   width: 578px;
   height: 434px;
 
-  filter: drop-shadow(0px 16px 32px rgba(0, 0, 0, 0.15));
+  filter: drop-shadow(0 16px 32px rgba(0 0 0 / 15%));
 }
 
 .effect-text-wrapper {
@@ -505,8 +505,10 @@ header {
   outline: none;
 }
 
+/*
 .subscription-textfield::-webkit-input-placeholder {
   color: #757575;
 
   opacity: 0.2;
 }
+*/
