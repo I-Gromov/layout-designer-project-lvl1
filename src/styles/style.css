@@ -171,6 +171,8 @@ header {
 }
 
 .section-one_title {
+  font-size: 60px;
+  line-height: 1.2;
   margin-bottom: 30px;
 }
 
@@ -460,6 +462,6 @@ header {
 
 .subscription_textfield::-webkit-input-placeholder {
   color: #757575;
-  
+
   opacity: 0.2;
 }
